@@ -51,6 +51,6 @@ public class LectureExample {
 			}
 			System.out.println();
 		}
-		System.out.println("  Total Edge Weight: " + total_edge_weight);
+		System.out.println("  Total Edge Weight: " + total_edge_weight/2);
 	}
 }
