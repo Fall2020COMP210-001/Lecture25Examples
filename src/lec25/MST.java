@@ -1,4 +1,4 @@
-package lec23;
+package lec25;
 
 import java.util.LinkedList;
 import java.util.PriorityQueue;

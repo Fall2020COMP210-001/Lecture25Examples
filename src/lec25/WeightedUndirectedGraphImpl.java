@@ -1,8 +1,7 @@
-package lec23;
+package lec25;
 
 import java.util.Set;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -14,6 +13,7 @@ public class WeightedUndirectedGraphImpl implements WeightedUndirectedGraph {
 
 	
 	public WeightedUndirectedGraphImpl() {
+
 		_adj_list = new HashMap<Vertex, List<WeightedUndirectedEdge>>();
 	}
 	

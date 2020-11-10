@@ -1,4 +1,4 @@
-package lec23;
+package lec25;
 
 public class LectureExample {
 
@@ -40,13 +40,17 @@ public class LectureExample {
 	}
 	
 	public static void printGraph(WeightedUndirectedGraph g) {
+		int total_edge_weight = 0;
 		System.out.println("Graph " + g.toString() + ":");
 		for (Vertex v : g.getVertices()) {
 			System.out.print("  " + v.toString() + " connected to: ");
-			for (Vertex adj : g.getAdjacent(v)) {
-				System.out.print(adj.toString() + " ");
+			for (WeightedUndirectedEdge e : g.getEdgesOf(v)) {
+				Vertex other = e.getOtherEndpoint(v);
+				System.out.print(other.toString() + " ");
+				total_edge_weight += e.getWeight();
 			}
 			System.out.println();
 		}
+		System.out.println("  Total Edge Weight: " + total_edge_weight);
 	}
 }

@@ -1,4 +1,4 @@
-package lec23;
+package lec25;
 
 
 public interface Vertex {

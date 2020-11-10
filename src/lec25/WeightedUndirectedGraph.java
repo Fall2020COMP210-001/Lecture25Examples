@@ -1,7 +1,6 @@
-package lec23;
+package lec25;
 
 
-import java.util.List;
 import java.util.Set;
 
 public interface WeightedUndirectedGraph {
